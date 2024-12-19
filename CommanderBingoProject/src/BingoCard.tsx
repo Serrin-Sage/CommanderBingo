@@ -38,20 +38,23 @@ export const BingoCard = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-6 space-y-6">
+    <div className="flex flex-col items-center p-6 space-y-6 small:p-0 ">
       <h1 className="text-2xl font-bold">Commander Bingo!</h1>
       <div className="grid grid-cols-5 gap-2">
         {bingoCardGrid.map((cell, index) => (
           <div
             key={index}
-            className={`cursor-pointer hover:bg-[#3a3a3a] relative flex items-center justify-center border border-gray-300 p-4 text-center text-sm font-medium h-[120px] ${
-              cell.bingoTask === "FREE SPACE" ? "bg-gray-400" : ""
+            className={`cursor-pointer hover:bg-[#3a3a3a] relative flex rounded-md items-center justify-center border border-gray-300 p-4 text-center text-sm font-medium h-[120px] small:h-[80px] small:leading-[10px]${
+              cell.bingoTask === "FREE SPACE" ? "bg-[#3d3d3d]" : ""
             }`}
             onClick={() => handleCellClick(cell.id)}
           >
-            {cell.bingoTask}
+            <span className="small:text-[10px]">{cell.bingoTask}</span>
             {cell.isComplete && (
-              <img src={MTGIcon} className="opacity-50 absolute size-[100px]" />
+              <img
+                src={MTGIcon}
+                className="opacity-50 absolute size-[100px] small:size-[50px]"
+              />
             )}
           </div>
         ))}
