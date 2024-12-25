@@ -40,7 +40,7 @@ export const BingoCard = () => {
   return (
     <div className="flex flex-col items-center p-6 space-y-6 small:p-0 ">
       <h1 className="text-2xl font-bold">Commander Bingo!</h1>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-5 gap-1">
         {bingoCardGrid.map((cell, index) => (
           <div
             key={index}

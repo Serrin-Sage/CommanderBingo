@@ -16,7 +16,11 @@ export const bingoData = [
   { id: 7, bingoTask: "Exile a permanent", isComplete: false },
   { id: 8, bingoTask: "Cause or witness a fight trigger", isComplete: false },
   { id: 9, bingoTask: "Make a deal with an opponent", isComplete: false },
-  { id: 10, bingoTask: "Generate 2+ treasure token", isComplete: false },
+  {
+    id: 10,
+    bingoTask: "Generate 3+ treasure in one turn",
+    isComplete: false,
+  },
   {
     id: 11,
     bingoTask: "Hear a groan or sigh from an opponent",
@@ -37,7 +41,7 @@ export const bingoData = [
   { id: 16, bingoTask: "Tap 6+ lands in one turn", isComplete: false },
   {
     id: 17,
-    bingoTask: "Cause or witness an infect trigger",
+    bingoTask: "A player gets a poison counter",
     isComplete: false,
   },
   {
@@ -61,7 +65,7 @@ export const bingoData = [
   { id: 24, bingoTask: "Counter a spell", isComplete: false },
   { id: 25, bingoTask: "Control 5+ creatures", isComplete: false },
   { id: 26, bingoTask: "Cast a boardwipe", isComplete: false },
-  { id: 27, bingoTask: "Have the highest life total", isComplete: false },
+  { id: 27, bingoTask: "Have 50+ total life", isComplete: false },
   {
     id: 28,
     bingoTask: "Opponent says '...just a little guy'",
@@ -93,7 +97,7 @@ export const bingoData = [
   { id: 40, bingoTask: "Cast a 3+ colored spell", isComplete: false },
   {
     id: 41,
-    bingoTask: "Swing with 20+ damage in one attack phase",
+    bingoTask: "Swing with 20+ damage in one combat phase",
     isComplete: false,
   },
   {
@@ -103,7 +107,7 @@ export const bingoData = [
   },
   {
     id: 43,
-    bingoTask: "Cast a permanent in your second main phase",
+    bingoTask: "Cast an instant during your combat phase",
     isComplete: false,
   },
   {
@@ -114,6 +118,36 @@ export const bingoData = [
   {
     id: 45,
     bingoTask: "Control a creature with 3+ keywords",
+    isComplete: false,
+  },
+  {
+    id: 46,
+    bingoTask: "Attach an equipment or aura to a creature",
+    isComplete: false,
+  },
+  {
+    id: 47,
+    bingoTask: "Deal non-combat damage to an opponent",
+    isComplete: false,
+  },
+  {
+    id: 48,
+    bingoTask: "Opponent says '...I offer my deck to cut'",
+    isComplete: false,
+  },
+  {
+    id: 49,
+    bingoTask: "Use a fetch land on an opponents end step",
+    isComplete: false,
+  },
+  {
+    id: 50,
+    bingoTask: "Enchant a permanent",
+    isComplete: false,
+  },
+  {
+    id: 51,
+    bingoTask: "Cast an X spell, where x = 5+",
     isComplete: false,
   },
 ];
